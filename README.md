@@ -83,3 +83,19 @@ Add a `.gitignore` to exclude build artifacts and node modules. Example entries:
 
 ---
 If you want, I can create the `.gitignore` and commit & push the repo for you — tell me whether you want the `gh` CLI used or prefer to add the remote yourself.
+
+## Environment variables
+
+This project requires an Anthropic API key for features that call Claude. Do NOT store API keys in the repository. Set the environment variable before running the backend:
+
+On macOS / Linux:
+
+```bash
+export ANTHROPIC_API_KEY="sk-..."
+cd backend
+mvn clean package -DskipTests
+java -jar target/oracle-migration-backend-1.0.0-SNAPSHOT.jar
+```
+
+On macOS using a `.env` file with a process manager or IDE, add the variable there and ensure it's loaded into the process environment.
+
