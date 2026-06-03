@@ -1,0 +1,35 @@
+# Java / Maven
+/backend/target/
+*.class
+*.jar
+
+# Node
+/frontend/node_modules/
+
+# IDEs
+.idea/
+.vscode/
+.DS_Store
+
+# OS
+Thumbs.db
+ehthumbs.db
+# Build artifacts
+backend/target/
+frontend/node_modules/
+frontend/dist/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+*.env.local
+
+# Logs
+*.log

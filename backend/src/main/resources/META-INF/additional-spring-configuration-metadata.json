@@ -1,0 +1,27 @@
+{
+  "properties": [
+    {
+      "name": "anthropic.secret",
+      "type": "java.lang.String",
+      "description": "Anthropic Claude API key for AI-powered PL/SQL to Java conversion."
+    },
+    {
+      "name": "anthropic.api-url",
+      "type": "java.lang.String",
+      "description": "Anthropic API endpoint URL.",
+      "defaultValue": "https://api.anthropic.com/v1/messages"
+    },
+    {
+      "name": "anthropic.model",
+      "type": "java.lang.String",
+      "description": "Claude model to use for conversion.",
+      "defaultValue": "claude-sonnet-4-5-20250929"
+    },
+    {
+      "name": "anthropic.max-tokens",
+      "type": "java.lang.Integer",
+      "description": "Maximum tokens for Claude API response.",
+      "defaultValue": 4096
+    }
+  ]
+}
